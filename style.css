@@ -1,0 +1,87 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #191919;
+    height: 100vh;
+}
+h1 {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+body p {
+    text-align: center;
+        color: #ffffffbf;
+        font-family: IBM Plex Mono, monospace;
+        background: #191919;
+        padding: 50px;
+    
+}
+.typewriter-container {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.typewriter p {
+    font-size: 35px;
+    font-weight: lighter;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typing 5s steps(64);
+}
+.typewriter p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #dadada;
+    right: 0;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes typing {
+    from {width:0}
+    to {width: 100%;}
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.containergalerie1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    margin: 70px auto 0;
+    /* background: crimson; */
+}
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
